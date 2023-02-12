@@ -1,6 +1,6 @@
-module HA_df_1bit(s_out,c_out,a_in,b_in);
-input a_in, b_in;
-output s_out, c_out;
+module HA_df_1bit(output s_out,output c_out,input a_in,input b_in);
+//input a_in, b_in;
+//output s_out, c_out;
 
 assign s_out = a_in ^ b_in;
 assign c_out = a_in & b_in;
