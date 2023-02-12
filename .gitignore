@@ -5,8 +5,8 @@
 
 # But not these files...
 !.gitignore
-!.v
-!.sh
+!*.v
+!*.sh
 
 # etc...
 
