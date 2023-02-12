@@ -5,6 +5,16 @@ assign {carry_out, sum_out} = a_in + b_in + c_in;
 endmodule
 
 
+module FA_1bit (input a_in,b_in,c_in, output sum_out, carry_out);
+
+assign sum_out = a_in ^ b_in ^ c_in;
+assign carry_out = a_in & b_in + (a_in ^ b_in) c_in;
+
+endmodule
+
+
+
+
 module FA_1bit_tb;
 
 reg a_in, b_in, c_in;
