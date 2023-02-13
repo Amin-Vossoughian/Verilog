@@ -1,0 +1,72 @@
+The difference between a strong zero and a zero is that a strong zero is connected to the ground so it pulls down any value, but a zero is could be between the ground and the limit of zero interpretation.
+the same goes for strong 1 and 1 logic
+
+in Case of X:(simulation value) 
+1- could represent an unknown value.
+2- could represent conflict if a line is driven by multiple logic
+3- could also represent Metastability in FF, in case the setup up or hold time is violated. 
+4- Finally it could represent an uninitialized value, normally before the first clock. 
+
+In the case of Z: (similar to 1 and zero, real-life value) 
+Just high impedance (tristate buffer). practically when the enable is not active and we do not have anything on the line. 
+
+Notice the Verilog is much simpler than VHDL, given that it represents 9 data types.
+
+
+===============Data Type ====================
+
+wire: input and output are by default wire unless we declare them as register.
+
+      The only place that we need to declare wire is for structural implementation when 
+
+       we are connecting one of our modules to the primitive gates. In addition, any module 
+
+       that we instance has to be connected by wire. 
+
+reg: is used only with a procedural block which is always@ and initial. that is due to 
+
+     the fact that if nothing in the sensitivity list change, the assigned value has to be 
+
+     able to keep its value. therefore is defined as reg. while in case of assigning a value, we are 
+
+     assigning some value to the wire and they will always have those values, thus not required
+
+     to store it.	 
+
+	 input can never be reg since will not give a value. in the case of the testbench, we do not have
+
+	 inputs, we just have registers that already store values. so the input and output lists of 
+
+	 the testbench are empty. 
+
+=================Number representation in verilog ============
+The only tow important points are that number is representd up to 32 bit.
+we could use hyphen to seperete numbers
+In case of negative number just simply put negative afete assingnment and it will be 
+translated to two's complement.   x= -4b0010 (2) =>     1110 (-2)
+it is axiomatic that we have to consider the sign bit when consider the number of bit.
+
+it is not aceptable to use z value in number for synthesis purposes, it is just possible to use them in case 
+simulation. 
+
+============================Operator points and notes =================
+The addition (+) , subtraction (-), and multiplication (*) operator are synthsizeable, but the division and modules 
+are not. Those are only used in the test bench for simulation purposes.
+The triple equality is used for when there is a z or x in the number. Therefore not synthesizable and 
+could be used for simulation purpose only. 
+recall that double operators are logical one (&& , || , etc) which means just used to check the true and 
+false value of the logic. for instance if we have two value a && b that each one are multiple bit, the 
+result is 1 only and only if the value a and b are not zero. Thus this operator are mostly use to check if two
+variable are true. 
+Logical not is ! and the boolean not is ~. 
+
+Verilog support both logical and arithmetic shift.
+1- in case of logical >> and << is used
+2- in case of arithmetich shift <<< and >>> is used. 
+recall that arithmatic shift only used for signed number. 
+
+Ternary operator similar to if else implement a mux.
+
+In case we have Z on the input of the gate, the ouput base on the other input and gata could takes 
+value 1 , 0 , X. Z could nvere appear as an ouput when is on the input. for more info look at the 
+resuloution table of each gate. 
