@@ -3,7 +3,7 @@ module decoder_ah_1_2_tb;
 reg sel_in, en_in;
 wire  [1:0] y_out;
 
-decoder_ah_1_2_bh_mux  uut_decoder_mux(.set_in(sel_in), .en_in(en_in), .y_out(y_out);
+decoder_ah_1_2_bh_mux  uut_decoder_mux(.set_in(sel_in), .en_in(en_in), .y_out(y_out));
 
 initial 
 begin 
