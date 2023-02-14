@@ -2,7 +2,7 @@
 description. it is possible to do it in structural.
 */
 
-module mux_4_1_2i1o (y_out, d_in, sel_in);
+module mux_4_1_bh_2i_1o (y_out, d_in, sel_in);
 
 input [3:0] d_in;
 input [1:0] sel_in;

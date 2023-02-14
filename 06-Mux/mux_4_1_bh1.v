@@ -1,9 +1,9 @@
-/*use case endcase to code parallel logic like muxes, if else is the priority instruction 
+/*use case construct to code parallel logic like muxes, if else is the priority instruction 
 which will lead to cascade of muxes that the frst input (first if) has the highest priority and 
 overwrite other in case its select is chosed. */
 
 
-module mux_4_1(y_out, d_in, sel_in);
+module mux_4_1_bh1(y_out, d_in, sel_in);
 
 input  [3:0] d_in;
 input  [1:0] sel_in;
@@ -16,6 +16,7 @@ always@*  begin
 		2'b10 :  y_out = d_in[2];
 		2'b11 :  y_out = d_in[3];
 		default: y_out = 0;
+		//default : $display("error");
 	endcase
 end
 endmodule

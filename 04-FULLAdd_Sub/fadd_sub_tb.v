@@ -1,11 +1,11 @@
-module FAdd_sub_tb;
+module fadd_sub_tb;
 
 reg [3:0] a_out, b_out;
 reg control_out;
 wire [3:0] sum_in;
 wire carry_in;
 
-FAdd_sub   DUT(.a_in(a_out), .b_in(b_out), .control_in(control_out), .sum_out(sum_in), .carry_out(carry_in));
+fadd_sub_bh   DUT(.a_in(a_out), .b_in(b_out), .control_in(control_out), .sum_out(sum_in), .carry_out(carry_in));
 
 initial
 begin
