@@ -7,7 +7,3 @@ vlog -reportprogress 300 -work work mux_4_1_bh1.v
 vlog -reportprogress 300 -work work mux_4_1_bh2.v
 vlog -reportprogress 300 -work work mux_4_1_bh3.v
 vlog -reportprogress 300 -work work mux_4_1_bh4.v 
-
-
-
-
