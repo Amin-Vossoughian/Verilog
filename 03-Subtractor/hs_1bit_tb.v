@@ -1,21 +1,4 @@
-module HS_1bit (input a_in,b_in, output diff_out, borrow_out);
-
-assign {borrow_out, differ_out} = a_in - b_in;
-
-endmodule
-
-
-module HS_1bit (input a_in,b_in, output diff_out, borrow_out);
-
-assign diff_out = a_in ^ b_in;
-assign carry_out = (~a_in) & b_in;
-
-endmodule
-
-
-
-
-module HS_1bit_tb;
+module hs_1bit_tb;
 
 reg a_in, b_in, borrow_in;
 wire diff_out, borrow_out;

@@ -1,21 +1,4 @@
-module FS_bh_1bit (input a_in,b_in,borrow_in, output diff_out, borrow_out);
-
-assign {borrow_out, diff_out} = a_in - b_in - borrow_in;
-
-endmodule
-
-
-module FS_df_1bit (input a_in,b_in,borrow_in, output diff_out, borrow_out);
-
-assign diff_out = a_in ^ b_in ^ borrow_in;
-assign carry_out = ~a_in & b_in | (~a_in | b_in) & borrow_in;
-
-endmodule
-
-
-
-
-module FS_1bit_tb;
+module fs_1bit_tb;
 
 reg a_in, b_in, borrow_in;
 wire diff_out, borrow_out;
