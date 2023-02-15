@@ -1,8 +1,10 @@
 module decoder_al_4_16_tb;
 
-reg [4:0] sel_in;
+reg [3:0] sel_in;
 reg en_in;
 wire [15:0] y_out;
+
+decoder_al_4_16_bh  DUT(.sel_in(sel_in), .en_in(en_in), .y_out(y_out));
 
 always #5   sel_in[0]=~sel_in[0];
 always #10  sel_in[1]=~sel_in[1];
@@ -15,11 +17,11 @@ $monitor ("time=%d\t sel_in=%b\t en_in=%b\t y_out=%b\t", $time, sel_in, en_in, y
 initial begin
 
 sel_in = 0;
-en_in = 0;
+en_in = 1;
 
-#100 en_in = 1;
+#100 en_in = 0;
 
-#250  en_in =0; 
+#250  en_in =1; 
 
 end
 endmodule

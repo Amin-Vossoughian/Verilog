@@ -1,0 +1,38 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : decoder_al_4_16_bh
+Version: F-2011.09-SP3
+Date   : Wed Feb 15 14:33:12 2023
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: sel_in[3] (input port)
+  Endpoint: y_out[7] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  decoder_al_4_16_bh 5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  sel_in[3] (in)                           0.00       0.00 f
+  U46/ZN (INV_X1)                          0.05       0.05 r
+  U34/ZN (NAND3_X1)                        0.06       0.11 f
+  U30/ZN (NOR3_X1)                         0.06       0.17 r
+  y_out[7] (out)                           0.00       0.17 r
+  data arrival time                                   0.17
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
