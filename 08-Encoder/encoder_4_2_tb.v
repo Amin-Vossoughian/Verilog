@@ -1,10 +1,11 @@
 module encoder_4_2_tb;
-
+parameter priority_test = 0;
 reg [3:0] d_in;
 wire invalid_input;
 wire [2:0] d_out;
 
-encoder_4_2_bh  DUT(.d_in(d_in), .invalid_data(invalid_input), .d_out(d_out));
+if (priority_test = 0) encoder_4_2_bh  DUT(.d_in(d_in), .invalid_data(invalid_input), .d_out(d_out));
+else encoder_priority_4_2_bh DUT(.d_in(d_in), .invalid_input(invalid_input), .d_out(d_out));
 
 always #5 d_in[0] = ~ d_in[0];
 always #10 d_in[1] = ~ d_in[1];

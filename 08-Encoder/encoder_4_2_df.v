@@ -1,4 +1,4 @@
-/*in this case we could not implemet just by contnious assignment*/
+/*in this case it is not possible to simply implement the invalid data block*/
 module encoder_4_2_df(d_out, d_in);
 
 input [3:0] d_in;
