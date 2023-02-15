@@ -10,6 +10,9 @@ vlog -reportprogress 300 -work work decoder_ah_2_4_bh_shift.v
 vlog -reportprogress 300 -work work decoder_ah_2_4_df.v 
 vlog -reportprogress 300 -work work decoder_ah_2_4_tb.v
 
+vlog -reportprogress 300 -work work decoder_al_4_16_bh.v
+vlog -reportprogress 300 -work work decoder_al_4_16_tb.v
+
 
 
 
