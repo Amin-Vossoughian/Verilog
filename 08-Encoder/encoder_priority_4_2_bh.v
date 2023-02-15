@@ -1,3 +1,6 @@
+/* Notice in this design the only case that invalid data will be active is 
+when the input is all zero, otherwise it will act as expected */
+
 module encoder_priority_4_2_bh(d_in, d_out, invalid_input);
 
 input [3:0] d_in;
