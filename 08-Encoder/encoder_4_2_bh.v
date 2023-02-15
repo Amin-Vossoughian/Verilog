@@ -1,7 +1,7 @@
 module encoder_4_2_bh(d_out, d_in, invalid_data);
 
 input [3:0] d_in;
-output reg invalid_input;
+output reg invalid_data;
 output reg [2:0] d_out;
 
 
