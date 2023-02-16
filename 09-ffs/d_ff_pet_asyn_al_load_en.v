@@ -1,4 +1,4 @@
-module d_ff_pet_asyn_al_load_en_test(d_in, q_out, reset_al_in, en_in, clk);
+module d_ff_pet_asyn_al_load_en(d_in, q_out, reset_al_in, en_in, clk);
 
 input d_in;
 input reset_al_in;
@@ -10,12 +10,12 @@ always@(posedge clk, negedge reset_al_in)
 begin
 	if(~reset_al_in)
 		q_out <= 1'b0;
-	else if( ~en_in)
+	else if( en_in)
 		q_out <= d_in;
 end
 endmodule
 
-module d_ff_pet_asyn_al_load_en(d_in, q_out, reset_al_in, en_in, clk);
+/*module d_ff_pet_asyn_al_load_en(q_out, reset_al_in, en_in, clk, d_in);
 
 input d_in;
 input reset_al_in;
@@ -33,3 +33,4 @@ begin
 		q_out <= d_in;
 end
 endmodule
+*/

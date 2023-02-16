@@ -1,6 +1,6 @@
-module d_ff_pet_syn_al_load_en_tb;
+module d_ff_al_load_en_tb;
 
-parameter  sync_test= 0;
+parameter  sync_test= 1;
 
 reg d_in;
 reg reset_al_in;
@@ -15,22 +15,23 @@ else
 d_ff_pet_asyn_al_load_en DUT(.d_in(d_in), .reset_al_in(reset_al_in), .clk(clk), .en_in(en_in),.q_out(q_out));
 
 
-always #10  clk=clk;
-always #15	reset_al_in = ~reset_al_in;
-always #20  en_in = ~en_in;
+always #10  clk  = ~clk;
 always #8   d_in = ~d_in;
 
+
 initial 
-$monitor ("time =%d\t, reset_al_in=%b\t, en_in=%b\t, clk=%b\t, d_in=%b\t", $time, reset_al_in, en_in, clk, d_in);
+$monitor ("time =%d\treset_al_in=%b\ten_in=%b\tclk=%b\td_in=%b\tq_out=%b", $time, reset_al_in, en_in, clk, d_in, q_out);
 
 initial
 begin
-d_in=0;
-reset_al_in=0;
-clk=0;
-en_in=0;
 
-#350 $stop
+d_in=0; reset_al_in=0; clk=0; en_in=1;
+
+#30 reset_al_in = 1;
+
+#50 en_in = 0;
+
+#300 $stop;
 
 end 
 endmodule
