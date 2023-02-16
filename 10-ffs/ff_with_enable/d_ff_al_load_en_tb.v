@@ -16,11 +16,12 @@ d_ff_pet_asyn_al_load_en DUT(.d_in(d_in), .reset_al_in(reset_al_in), .clk(clk), 
 
 
 always #10  clk  = ~clk;
-always #8   d_in = ~d_in;
+always #7   d_in = ~d_in;
 
 
 initial 
-$monitor ("time =%d\treset_al_in=%b\ten_in=%b\tclk=%b\td_in=%b\tq_out=%b", $time, reset_al_in, en_in, clk, d_in, q_out);
+$monitor ("time =%d\treset_al_in=%b\ten_in=%b\tclk=%b\td_in=%b\tq_out=%b",
+          $time, reset_al_in, en_in, clk, d_in, q_out);
 
 initial
 begin
@@ -31,7 +32,7 @@ d_in=0; reset_al_in=0; clk=0; en_in=1;
 
 #50 en_in = 0;
 
-#300 $stop;
+#3000 $stop;
 
 end 
 endmodule
