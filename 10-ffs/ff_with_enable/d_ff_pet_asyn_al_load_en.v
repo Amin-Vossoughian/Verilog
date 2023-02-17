@@ -1,6 +1,6 @@
 /*look at the synchronous explanation and follow the book design.*/
-
 /*
+
 module d_ff_pet_asyn_al_load_en(d_in, q_out, reset_al_in, en_in, clk);
 
 input d_in;

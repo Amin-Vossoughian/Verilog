@@ -11,7 +11,8 @@ combinational circuit design. in combinatinal if we neglect lase else consider
 as latch, but all of assignment were blocking, while here are non-blocking.
 
 the pdf in the folder shows both implementation. 
-
+*/
+/*
 module d_ff_pet_syn_al_load_en(d_in, q_out, reset_al_in, en_in, clk);
 
 input d_in;
@@ -29,7 +30,6 @@ begin
 end
 endmodule
 */
-
 module d_ff_pet_syn_al_load_en(d_in, q_out, reset_al_in, en_in, clk);
 
 input d_in;
