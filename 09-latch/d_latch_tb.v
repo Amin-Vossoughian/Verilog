@@ -1,13 +1,14 @@
 module d_latch_tb;
-parameter UUT_d_latch_nls =1;
+parameter UUT_d_latch = 2;
 
 reg d_in;
 reg en_in;
 wire q_out;
 
-if ( UUT_d_latch_nls == 1)
-	  d_latch_nls  DUT(.q_out(q_out), .d_in(d_in), .en_in(en_in));
-else  d_latch_pls  DUT(.q_out(q_out), .d_in(d_in), .en_in(en_in));
+if      (UUT_d_latch == 1) d_latch_nls     DUT(.q_out(q_out), .d_in(d_in), .en_in(en_in));
+else if (UUT_d_latch == 2) d_latch_pls     DUT(.q_out(q_out), .d_in(d_in), .en_in(en_in));
+else if (UUT_d_latch == 3) d_latch_nls_df  DUT(.q_out(q_out), .d_in(d_in), .en_in(en_in));
+else if (UUT_d_latch == 4) d_latch_pls_df  DUT(.q_out(q_out), .d_in(d_in), .en_in(en_in));
 
 always #6  d_in = ~d_in;
 always #10 en_in = ~ en_in;
