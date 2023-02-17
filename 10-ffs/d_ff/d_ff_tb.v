@@ -10,7 +10,7 @@ always #20 clk = ~clk;
 always #11 d_in = ~ d_in;
 
 initial
-$monitor("time:%d\t reset_al_in=%b\t clk=%b\t d_in=%b\t q_out=%b\t", $time, reset_al_in, clk, d_in, q_out);
+$monitor("time:%d\t clk=%b\t d_in=%b\t q_out=%b\t", $time, clk, d_in, q_out);
 
 initial begin
 
