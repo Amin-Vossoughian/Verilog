@@ -10,7 +10,7 @@ d_ff_pet_asyn_al   DUT(.d_in(d_in), .clk(clk), .reset_al_in(reset_al_in), .q_out
 else
 d_ff_pet_syn_al   DUT(.d_in(d_in), .clk(clk), .reset_al_in(reset_al_in), .q_out(q_out));
 
-always #10 clk=~clk;
+always #10 clk = ~clk;
 always #50 reset_al_in = ~ reset_al_in;
 always #15 d_in = ~ d_in;
 initial

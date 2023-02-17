@@ -1,0 +1,25 @@
+The Blocking assignment is stopage assignment. it means after defining the value will change.
+it is the normal assignment that occure at programming ans systemc. 
+for instance
+a=b;
+c=a;
+d=c; 
+
+The above example execute step by step and chanve the value at each step. it is basicly 
+d=b;
+
+On the other hand the non-blocking assignment follow the change after all sequential 
+instruction are executed. it exactly has two value, current value and old value. similar to 
+delta cycle in systemc.
+
+a <= b;
+c <= a;
+d <= c;
+
+In above example the d will not be equal to b, but the old value of the c.
+
+Generally speaking, in VLSI design always but in few exception, the assignment occure at
+the end of clock period. 
+
+Given this explanation, we could use for latch the blocking assignment, but for ffs, we have
+to use non-blocking assignment. although in sysnthesis the result was the same, always do that.

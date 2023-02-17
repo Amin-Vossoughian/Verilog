@@ -1,0 +1,9 @@
+it is possible from theoritical point of view to have any combination of synch and Asynch 
+reset and preset for FFs and latches, but in practice it is not a good design methodology 
+and could cause problem.
+we will have either asynch reset and preset or synchronous reset and preset. 
+
+In addition, there are two different behaviour in case buit-in asynchronous reset, and 
+asynchronous reset implemented by mux at the output of the ff. 
+In the former, when reset signal release, the 0 will remain at the output, while in the 
+latter case, the previous value will be put at the output of the circuit. 
