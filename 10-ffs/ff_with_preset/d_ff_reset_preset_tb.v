@@ -1,6 +1,6 @@
-module d_ff_al_load_en_tb;
+module d_ff_reset_preset_tb;
 
-parameter  sync_test= 1;
+parameter  sync_test= 0;
 
 reg d_in;
 reg reset_al_in;
@@ -14,7 +14,8 @@ d_ff_pet_syn_reset_preset DUT(.d_in(d_in), .reset_al_in(reset_al_in), .clk(clk),
 else
 d_ff_pet_asyn_reset_preset DUT(.d_in(d_in), .reset_al_in(reset_al_in), .clk(clk), .preset_in(preset_in),.q_out(q_out));
 
-
+always #173 preset_in = ~ preset_in;
+always #100 reset_al_in = ~ reset_al_in;
 always #10  clk  = ~clk;
 always #7   d_in = ~d_in;
 
@@ -28,11 +29,10 @@ begin
 
 d_in=0; reset_al_in=0; clk=0; preset_in=1;
 
-#30 reset_al_in = 1;
 
-#50 preset_in = 0;
-
-#3000 $stop;
+#5000 $stop;
 
 end 
 endmodule
+
+//vsim work.d_ff_reset_preset_tb -t 10ps -voptargs=+acc

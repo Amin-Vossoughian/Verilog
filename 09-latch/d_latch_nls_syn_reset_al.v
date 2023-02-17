@@ -8,7 +8,7 @@ output reg q_out;
 always@* begin
 
 if (~reset_al_in)  q_out= 1'b0;
-else if  (~en_in)  q_out = d_in;
+else if  (en_in)  q_out = d_in;
 
 end
 endmodule
