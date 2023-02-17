@@ -7,10 +7,9 @@ output reg q_out;
 
 always@(posedge clk)
 begin
-if (~reset_al_in)
-	q_out <= 1'b0;
-else
-	q_out <= d_in;
+
+if (~reset_al_in) q_out <= 1'b0;
+else q_out <= d_in;
 	
 end
 

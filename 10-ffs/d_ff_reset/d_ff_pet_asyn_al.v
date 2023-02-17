@@ -1,11 +1,3 @@
-/* Recall that in verilog when an input is in sensitivity list and not used in if 
-or else condition, the verilog consider that it will holds its previous value, thus 
-consider a latch for it. 
-here we have first if that is for asynchronous reset. asfterwards we have else that here
-means if reset is not negative, and  clock is positive d_in will be equal to q_out. the 
-code is shown in the end of code.  
-*/
-
 module d_ff_pet_asyn_al(d_in, clk, reset_al_in, q_out);
 
 input d_in;
@@ -21,6 +13,14 @@ else q_out <= d_in;
 
 end
 endmodule
+
+/* Recall that in verilog when an input is in sensitivity list and not used in if 
+or else condition, the verilog consider that it will holds its previous value, thus 
+consider a latch for it. 
+here we have first if that is for asynchronous reset. asfterwards we have else that here
+means if reset is not negative, and  clock is positive d_in will be equal to q_out. the 
+code is shown in the end of code.  
+*/
 
 /*
 if (~reset_al_in) q_out <= 1'b0;
