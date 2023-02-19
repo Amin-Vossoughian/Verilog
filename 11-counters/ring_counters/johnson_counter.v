@@ -1,4 +1,4 @@
-module johnson_counter#(parameter N=10)(clk, count_out, reset_al_in);
+module johnson_counter #(parameter N=10)(clk, count_out, reset_al_in);
 
 input clk;
 input reset_al_in;

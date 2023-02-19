@@ -1,0 +1,90 @@
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -c work.counter_tb -t 10ps -voptargs="+acc" -debugDB -do "run -all" 
+# Start time: 19:47:54 on Feb 19,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.counter_tb(fast)
+# Loading work.ring_counter(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# run -all
+# time:                   0 reset_al_in=0	 clk=0	 count_out=1000000000	
+# time:                  10 reset_al_in=0	 clk=1	 count_out=1000000000	
+# time:                  20 reset_al_in=0	 clk=0	 count_out=1000000000	
+# time:                  30 reset_al_in=1	 clk=1	 count_out=0100000000	
+# time:                  40 reset_al_in=1	 clk=0	 count_out=0100000000	
+# time:                  50 reset_al_in=1	 clk=1	 count_out=0010000000	
+# time:                  60 reset_al_in=1	 clk=0	 count_out=0010000000	
+# time:                  70 reset_al_in=1	 clk=1	 count_out=0001000000	
+# time:                  80 reset_al_in=1	 clk=0	 count_out=0001000000	
+# time:                  90 reset_al_in=1	 clk=1	 count_out=0000100000	
+# time:                 100 reset_al_in=1	 clk=0	 count_out=0000100000	
+# time:                 110 reset_al_in=1	 clk=1	 count_out=0000010000	
+# time:                 120 reset_al_in=1	 clk=0	 count_out=0000010000	
+# time:                 130 reset_al_in=1	 clk=1	 count_out=0000001000	
+# time:                 140 reset_al_in=1	 clk=0	 count_out=0000001000	
+# time:                 150 reset_al_in=1	 clk=1	 count_out=0000000100	
+# time:                 160 reset_al_in=1	 clk=0	 count_out=0000000100	
+# time:                 170 reset_al_in=1	 clk=1	 count_out=0000000010	
+# time:                 180 reset_al_in=1	 clk=0	 count_out=0000000010	
+# time:                 190 reset_al_in=1	 clk=1	 count_out=0000000001	
+# time:                 200 reset_al_in=1	 clk=0	 count_out=0000000001	
+# time:                 210 reset_al_in=1	 clk=1	 count_out=1000000000	
+# time:                 220 reset_al_in=1	 clk=0	 count_out=1000000000	
+# time:                 230 reset_al_in=0	 clk=1	 count_out=1000000000	
+# time:                 240 reset_al_in=0	 clk=0	 count_out=1000000000	
+# time:                 250 reset_al_in=0	 clk=1	 count_out=1000000000	
+# time:                 260 reset_al_in=0	 clk=0	 count_out=1000000000	
+# time:                 270 reset_al_in=0	 clk=1	 count_out=1000000000	
+# time:                 280 reset_al_in=1	 clk=0	 count_out=1000000000	
+# time:                 290 reset_al_in=1	 clk=1	 count_out=0100000000	
+# time:                 300 reset_al_in=1	 clk=0	 count_out=0100000000	
+# time:                 310 reset_al_in=1	 clk=1	 count_out=0010000000	
+# time:                 320 reset_al_in=1	 clk=0	 count_out=0010000000	
+# time:                 330 reset_al_in=1	 clk=1	 count_out=0001000000	
+# time:                 340 reset_al_in=1	 clk=0	 count_out=0001000000	
+# time:                 350 reset_al_in=1	 clk=1	 count_out=0000100000	
+# time:                 360 reset_al_in=1	 clk=0	 count_out=0000100000	
+# time:                 370 reset_al_in=1	 clk=1	 count_out=0000010000	
+# time:                 380 reset_al_in=1	 clk=0	 count_out=0000010000	
+# time:                 390 reset_al_in=1	 clk=1	 count_out=0000001000	
+# time:                 400 reset_al_in=1	 clk=0	 count_out=0000001000	
+# time:                 410 reset_al_in=1	 clk=1	 count_out=0000000100	
+# time:                 420 reset_al_in=1	 clk=0	 count_out=0000000100	
+# time:                 430 reset_al_in=1	 clk=1	 count_out=0000000010	
+# time:                 440 reset_al_in=1	 clk=0	 count_out=0000000010	
+# time:                 450 reset_al_in=1	 clk=1	 count_out=0000000001	
+# time:                 460 reset_al_in=1	 clk=0	 count_out=0000000001	
+# time:                 470 reset_al_in=1	 clk=1	 count_out=1000000000	
+# time:                 480 reset_al_in=1	 clk=0	 count_out=1000000000	
+# time:                 490 reset_al_in=1	 clk=1	 count_out=0100000000	
+# time:                 500 reset_al_in=1	 clk=0	 count_out=0100000000	
+# time:                 510 reset_al_in=1	 clk=1	 count_out=0010000000	
+# time:                 520 reset_al_in=1	 clk=0	 count_out=0010000000	
+# time:                 530 reset_al_in=1	 clk=1	 count_out=0001000000	
+# time:                 540 reset_al_in=1	 clk=0	 count_out=0001000000	
+# time:                 550 reset_al_in=1	 clk=1	 count_out=0000100000	
+# time:                 560 reset_al_in=1	 clk=0	 count_out=0000100000	
+# time:                 570 reset_al_in=1	 clk=1	 count_out=0000010000	
+# ** Note: $stop    : counter_tb.v(28)
+#    Time: 5800 ps  Iteration: 0  Instance: /counter_tb
+# Break in Module counter_tb at counter_tb.v line 28
+# Stopped at counter_tb.v line 28
+VSIM 2> # End time: 19:47:57 on Feb 19,2023, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
