@@ -1,4 +1,4 @@
-module counter_up_3bit(count_out, d_in, load_in, reset_al_in, clk);
+/*module counter_down_3bit(count_out, d_in, load_in, reset_al_in, clk);
 
 input [2:0] d_in;
 input clk;
@@ -13,21 +13,21 @@ begin
 	else if (load_in)
 		count_out <= d_in;
 	else
-	count_out <= count_out + 1'b1;
+	count_out <= count_out - 1'b1;
 end
 endmodule
-
+*/
 /*check with compiler to see if begin end is required*/
 
-module counter_up_3bit(count_out, d_in, load_in, reset_al_in, clk);
+module counter_down_3bit(count_out, d_in, load_in, reset_al_in, clk);
 
 input [2:0] d_in;
 input clk;
 input reset_al_in;
 input load_in;
-output reg [2:0] count_out;
+output [2:0] count_out;
 
-reg count_temp;
+reg [2:0] count_temp;
 
 always@(posedge clk, negedge reset_al_in)
 begin
@@ -36,10 +36,9 @@ begin
 	else if (load_in)
 		count_temp <= d_in;
 	else
-	count_temp <= count_temp + 1'b1;
+	count_temp <= count_temp - 1'b1;
 end
 
 assign count_out = count_temp;
 
 endmodule
-		

@@ -15,6 +15,4 @@ begin
 	else
 	count_out <= count_out + 1'b1;
 end
-endmodule
-
-		
+endmodule	

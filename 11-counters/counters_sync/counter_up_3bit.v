@@ -18,16 +18,16 @@ end
 endmodule
 
 /*check with compiler to see if begin end is required*/
-
+/*
 module counter_up_3bit(count_out, d_in, load_in, reset_al_in, clk);
 
 input [2:0] d_in;
 input clk;
 input reset_al_in;
 input load_in;
-output reg [2:0] count_out;
+output [2:0] count_out;
 
-reg count_temp;
+reg [2:0] count_temp;
 
 always@(posedge clk, negedge reset_al_in)
 begin
@@ -42,4 +42,4 @@ end
 assign count_out = count_temp;
 
 endmodule
-		
+*/
