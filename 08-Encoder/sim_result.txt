@@ -1,0 +1,147 @@
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -c work.encoder_4_2_tb -t 10ps -voptargs="+acc" -debugDB -do "run -all; exit" 
+# Start time: 23:55:55 on Feb 20,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.encoder_4_2_tb(fast)
+# Loading work.encoder_4_2_bh(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# run -all
+# time=                   0	 d_in=0000	 invalid_input=1	 d_out=00	
+# time=                   5	 d_in=0001	 invalid_input=0	 d_out=00	
+# time=                  10	 d_in=0010	 invalid_input=0	 d_out=01	
+# time=                  15	 d_in=0111	 invalid_input=1	 d_out=00	
+# time=                  20	 d_in=0100	 invalid_input=0	 d_out=10	
+# time=                  25	 d_in=0101	 invalid_input=1	 d_out=00	
+# time=                  30	 d_in=1010	 invalid_input=1	 d_out=00	
+# time=                  35	 d_in=1011	 invalid_input=1	 d_out=00	
+# time=                  40	 d_in=1000	 invalid_input=0	 d_out=11	
+# time=                  45	 d_in=0101	 invalid_input=1	 d_out=00	
+# time=                  50	 d_in=0110	 invalid_input=1	 d_out=00	
+# time=                  55	 d_in=0111	 invalid_input=1	 d_out=00	
+# time=                  60	 d_in=1000	 invalid_input=0	 d_out=11	
+# time=                  65	 d_in=1001	 invalid_input=1	 d_out=00	
+# time=                  70	 d_in=1010	 invalid_input=1	 d_out=00	
+# time=                  75	 d_in=0111	 invalid_input=1	 d_out=00	
+# time=                  80	 d_in=0100	 invalid_input=0	 d_out=10	
+# time=                  85	 d_in=0101	 invalid_input=1	 d_out=00	
+# time=                  90	 d_in=1010	 invalid_input=1	 d_out=00	
+# time=                  95	 d_in=1011	 invalid_input=1	 d_out=00	
+# ** Note: $stop    : encoder_4_2_tb.v(27)
+#    Time: 1 ns  Iteration: 0  Instance: /encoder_4_2_tb
+# Break in Module encoder_4_2_tb at encoder_4_2_tb.v line 27
+# Stopped at encoder_4_2_tb.v line 27
+#  exit
+# End time: 23:55:56 on Feb 20,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -c work.encoder_4_2_df_tb -t 10ps -voptargs="+acc" -debugDB -do "run -all; exit" 
+# Start time: 00:09:37 on Feb 21,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.encoder_4_2_df_tb(fast)
+# Loading work.encoder_4_2_df(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# run -all
+# time=                   0	 d_in=0000	 d_out=00	
+# time=                   5	 d_in=0001	 d_out=00	
+# time=                  10	 d_in=0010	 d_out=01	
+# time=                  15	 d_in=0011	 d_out=00	
+# time=                  20	 d_in=0100	 d_out=10	
+# time=                  25	 d_in=0101	 d_out=00	
+# time=                  30	 d_in=0110	 d_out=00	
+# time=                  35	 d_in=0111	 d_out=00	
+# time=                  40	 d_in=1000	 d_out=11	
+# time=                  45	 d_in=1001	 d_out=00	
+# time=                  50	 d_in=1010	 d_out=00	
+# time=                  55	 d_in=1011	 d_out=00	
+# time=                  60	 d_in=1100	 d_out=00	
+# time=                  65	 d_in=1101	 d_out=00	
+# time=                  70	 d_in=1110	 d_out=00	
+# time=                  75	 d_in=1111	 d_out=00	
+# time=                  80	 d_in=0000	 d_out=00	
+# time=                  85	 d_in=0001	 d_out=00	
+# time=                  90	 d_in=0010	 d_out=01	
+# time=                  95	 d_in=0011	 d_out=00	
+# time=                 100	 d_in=0100	 d_out=10	
+# time=                 105	 d_in=0101	 d_out=00	
+# time=                 110	 d_in=0110	 d_out=00	
+# time=                 115	 d_in=0111	 d_out=00	
+# time=                 120	 d_in=1000	 d_out=11	
+# time=                 125	 d_in=1001	 d_out=00	
+# time=                 130	 d_in=1010	 d_out=00	
+# time=                 135	 d_in=1011	 d_out=00	
+# time=                 140	 d_in=1100	 d_out=00	
+# time=                 145	 d_in=1101	 d_out=00	
+# time=                 150	 d_in=1110	 d_out=00	
+# time=                 155	 d_in=1111	 d_out=00	
+# time=                 160	 d_in=0000	 d_out=00	
+# time=                 165	 d_in=0001	 d_out=00	
+# time=                 170	 d_in=0010	 d_out=01	
+# time=                 175	 d_in=0011	 d_out=00	
+# time=                 180	 d_in=0100	 d_out=10	
+# time=                 185	 d_in=0101	 d_out=00	
+# time=                 190	 d_in=0110	 d_out=00	
+# time=                 195	 d_in=0111	 d_out=00	
+# time=                 200	 d_in=1000	 d_out=11	
+# time=                 205	 d_in=1001	 d_out=00	
+# time=                 210	 d_in=1010	 d_out=00	
+# time=                 215	 d_in=1011	 d_out=00	
+# time=                 220	 d_in=1100	 d_out=00	
+# time=                 225	 d_in=1101	 d_out=00	
+# time=                 230	 d_in=1110	 d_out=00	
+# time=                 235	 d_in=1111	 d_out=00	
+# time=                 240	 d_in=0000	 d_out=00	
+# time=                 245	 d_in=0001	 d_out=00	
+# time=                 250	 d_in=0010	 d_out=01	
+# time=                 255	 d_in=0011	 d_out=00	
+# time=                 260	 d_in=0100	 d_out=10	
+# time=                 265	 d_in=0101	 d_out=00	
+# time=                 270	 d_in=0110	 d_out=00	
+# time=                 275	 d_in=0111	 d_out=00	
+# time=                 280	 d_in=1000	 d_out=11	
+# time=                 285	 d_in=1001	 d_out=00	
+# time=                 290	 d_in=1010	 d_out=00	
+# time=                 295	 d_in=1011	 d_out=00	
+# ** Note: $stop    : encoder_4_2_df_tb.v(23)
+#    Time: 3 ns  Iteration: 0  Instance: /encoder_4_2_df_tb
+# Break in Module encoder_4_2_df_tb at encoder_4_2_df_tb.v line 23
+# Stopped at encoder_4_2_df_tb.v line 23
+#  exit
+# End time: 00:09:38 on Feb 21,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
