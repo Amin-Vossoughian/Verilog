@@ -7,7 +7,7 @@ reg reset_al_in;
 reg d_in;
 wire q_out;
 
-siso_nbit  DUT(.clk(clk), .reset_al_in(reset_al_in), .d_in(d_in), .q_out(q_out));
+siso_nbit_test  DUT(.clk(clk), .reset_al_in(reset_al_in), .d_in(d_in), .q_out(q_out));
 
 initial 
 $monitor ("time:%d reset_al_in=%b\t clk=%b\t d_in=%b\t  q_out=%b\t", $time, reset_al_in, clk, d_in, q_out);
@@ -24,4 +24,4 @@ d_in = 0;
 
 #600 $stop;
 end 
-endmodule 
+endmodule
