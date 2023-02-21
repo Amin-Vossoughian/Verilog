@@ -27,7 +27,7 @@ assign q_out=temp_regs[0];
 endmodule
 */
 
-module siso_nbit #(parameter N=4) (d_in, q_out, clk, reset_al_in);
+module siso_nbit #(parameter N=4)(d_in, q_out, clk, reset_al_in);
 
 input  clk;
 input  reset_al_in;
@@ -46,5 +46,4 @@ always@(posedge clk) begin
 end
 assign q_out=temp_regs[0];
 endmodule
-
 
