@@ -13,7 +13,7 @@ initial
 $monitor ("time:%d reset_al_in=%b\t clk=%b\t d_in=%b\t  q_out=%b\t", $time,reset_al_in, clk, d_in, q_out);
 
 always #10 clk = ~clk;
-always #20 d_in = ~d_in;
+always #80 d_in = ~d_in;
 initial begin
 
 reset_al_in=1'b1;
@@ -21,7 +21,6 @@ clk= 1'b0;
 d_in = 0;
 
 #5 reset_al_in=1'b0;
-
 
 #600 $stop;
 end 
