@@ -13,19 +13,14 @@ reg [N-1:0] binary_out;
 integer i;
 
 
-always@(posedge clk, negedge reset_al_in)
-
-begin
-if (~reset_al_in)
-	binary_out <= 8'b0000_0000;
-else begin
-	binary_out <= binary_out +1;
-
-	count_out[N-1] <= binary_out[N-1];
-	
-	for (i =0 ; i < N-1; i=i+1) 
-		count_out[N-(i+2)] <= binary_out[N-(1+i)] ^ binary_out[N-(i+2)];
-
+always@(posedge clk, negedge reset_al_in) begin
+	if (~reset_al_in)
+		binary_out <= 8'b0000_0000;
+	else begin
+		binary_out <= binary_out +1;
+		count_out[N-1] <= binary_out[N-1];
+		for (i =0 ; i < N-1; i=i+1) 
+			count_out[N-(i+2)] <= binary_out[N-(1+i)] ^ binary_out[N-(i+2)];
 	end
 end
 

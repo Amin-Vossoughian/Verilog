@@ -1,0 +1,12 @@
+the list of design that have not tested and wait to be tested by systemverilog as 
+exercise.
+
+1-counter_10_to_40_up_down_bh1
+2-counter_10_to_40_up_down_bh2
+3-twin_set from regitster group
+4- barrel shifter
+5-universal shift register
+6-freq_div_by_2
+7-freq_div_by_4
+8-freq_div_by_3
+9-counter_async_4bits

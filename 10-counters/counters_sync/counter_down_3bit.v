@@ -17,7 +17,6 @@ begin
 end
 endmodule
 */
-/*check with compiler to see if begin end is required*/
 
 module counter_down_3bit(count_out, d_in, load_in, reset_al_in, clk);
 
