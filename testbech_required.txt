@@ -9,4 +9,3 @@ exercise.
 6-freq_div_by_2
 7-freq_div_by_4
 8-freq_div_by_3
-9-counter_async_4bits
