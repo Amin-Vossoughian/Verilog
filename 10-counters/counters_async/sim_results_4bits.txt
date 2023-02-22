@@ -1,0 +1,158 @@
+Reading pref.tcl
+
+# 10.7c
+
+# vsim -c work.counter_async_4bits_tb -t 10ps -voptargs="+acc" -debugDB -do "add wave *;run -all;exit" 
+# Start time: 19:25:49 on Feb 22,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# //  Questa Sim-64
+# //  Version 10.7c linux_x86_64 Aug 17 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.counter_async_4bits_tb(fast)
+# Loading work.counter_async_4bits(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# add wave *
+# run -all
+# time=                   0	 reset_al_in=0	 clk=0	  count_out= x	
+# time=                   5	 reset_al_in=0	 clk=1	  count_out= 0	
+# time=                  10	 reset_al_in=0	 clk=0	  count_out= 0	
+# time=                  15	 reset_al_in=0	 clk=1	  count_out= 0	
+# time=                  20	 reset_al_in=1	 clk=0	  count_out=15	
+# time=                  25	 reset_al_in=1	 clk=1	  count_out= 0	
+# time=                  30	 reset_al_in=1	 clk=0	  count_out= 0	
+# time=                  35	 reset_al_in=1	 clk=1	  count_out= 1	
+# time=                  40	 reset_al_in=1	 clk=0	  count_out= 1	
+# time=                  45	 reset_al_in=1	 clk=1	  count_out= 2	
+# time=                  50	 reset_al_in=1	 clk=0	  count_out= 2	
+# time=                  55	 reset_al_in=1	 clk=1	  count_out= 3	
+# time=                  60	 reset_al_in=1	 clk=0	  count_out= 3	
+# time=                  65	 reset_al_in=1	 clk=1	  count_out= 4	
+# time=                  70	 reset_al_in=1	 clk=0	  count_out= 4	
+# time=                  75	 reset_al_in=1	 clk=1	  count_out= 5	
+# time=                  80	 reset_al_in=1	 clk=0	  count_out= 5	
+# time=                  85	 reset_al_in=1	 clk=1	  count_out= 6	
+# time=                  90	 reset_al_in=1	 clk=0	  count_out= 6	
+# time=                  95	 reset_al_in=1	 clk=1	  count_out= 7	
+# time=                 100	 reset_al_in=1	 clk=0	  count_out= 7	
+# time=                 105	 reset_al_in=1	 clk=1	  count_out= 8	
+# time=                 110	 reset_al_in=1	 clk=0	  count_out= 8	
+# time=                 115	 reset_al_in=1	 clk=1	  count_out= 9	
+# time=                 120	 reset_al_in=1	 clk=0	  count_out= 9	
+# time=                 125	 reset_al_in=1	 clk=1	  count_out=10	
+# time=                 130	 reset_al_in=1	 clk=0	  count_out=10	
+# time=                 135	 reset_al_in=1	 clk=1	  count_out=11	
+# time=                 140	 reset_al_in=1	 clk=0	  count_out=11	
+# time=                 145	 reset_al_in=1	 clk=1	  count_out=12	
+# time=                 150	 reset_al_in=1	 clk=0	  count_out=12	
+# time=                 155	 reset_al_in=1	 clk=1	  count_out=13	
+# time=                 160	 reset_al_in=1	 clk=0	  count_out=13	
+# time=                 165	 reset_al_in=1	 clk=1	  count_out=14	
+# time=                 170	 reset_al_in=1	 clk=0	  count_out=14	
+# time=                 175	 reset_al_in=1	 clk=1	  count_out=15	
+# time=                 180	 reset_al_in=1	 clk=0	  count_out=15	
+# time=                 185	 reset_al_in=1	 clk=1	  count_out= 0	
+# time=                 190	 reset_al_in=1	 clk=0	  count_out= 0	
+# time=                 195	 reset_al_in=1	 clk=1	  count_out= 1	
+# time=                 200	 reset_al_in=1	 clk=0	  count_out= 1	
+# time=                 205	 reset_al_in=1	 clk=1	  count_out= 2	
+# time=                 210	 reset_al_in=1	 clk=0	  count_out= 2	
+# time=                 215	 reset_al_in=1	 clk=1	  count_out= 3	
+# time=                 220	 reset_al_in=1	 clk=0	  count_out= 3	
+# time=                 225	 reset_al_in=1	 clk=1	  count_out= 4	
+# time=                 230	 reset_al_in=1	 clk=0	  count_out= 4	
+# time=                 235	 reset_al_in=1	 clk=1	  count_out= 5	
+# time=                 240	 reset_al_in=1	 clk=0	  count_out= 5	
+# time=                 245	 reset_al_in=1	 clk=1	  count_out= 6	
+# time=                 250	 reset_al_in=1	 clk=0	  count_out= 6	
+# time=                 255	 reset_al_in=1	 clk=1	  count_out= 7	
+# time=                 260	 reset_al_in=1	 clk=0	  count_out= 7	
+# time=                 265	 reset_al_in=1	 clk=1	  count_out= 8	
+# time=                 270	 reset_al_in=1	 clk=0	  count_out= 8	
+# time=                 275	 reset_al_in=1	 clk=1	  count_out= 9	
+# time=                 280	 reset_al_in=1	 clk=0	  count_out= 9	
+# time=                 285	 reset_al_in=1	 clk=1	  count_out=10	
+# time=                 290	 reset_al_in=1	 clk=0	  count_out=10	
+# time=                 295	 reset_al_in=1	 clk=1	  count_out=11	
+# time=                 300	 reset_al_in=1	 clk=0	  count_out=11	
+# time=                 305	 reset_al_in=1	 clk=1	  count_out=12	
+# time=                 310	 reset_al_in=1	 clk=0	  count_out=12	
+# time=                 315	 reset_al_in=1	 clk=1	  count_out=13	
+# time=                 320	 reset_al_in=1	 clk=0	  count_out=13	
+# time=                 325	 reset_al_in=1	 clk=1	  count_out=14	
+# time=                 330	 reset_al_in=1	 clk=0	  count_out=14	
+# time=                 335	 reset_al_in=1	 clk=1	  count_out=15	
+# time=                 340	 reset_al_in=1	 clk=0	  count_out=15	
+# time=                 345	 reset_al_in=1	 clk=1	  count_out= 0	
+# time=                 350	 reset_al_in=1	 clk=0	  count_out= 0	
+# time=                 355	 reset_al_in=1	 clk=1	  count_out= 1	
+# time=                 360	 reset_al_in=1	 clk=0	  count_out= 1	
+# time=                 365	 reset_al_in=1	 clk=1	  count_out= 2	
+# time=                 370	 reset_al_in=1	 clk=0	  count_out= 2	
+# time=                 375	 reset_al_in=1	 clk=1	  count_out= 3	
+# time=                 380	 reset_al_in=1	 clk=0	  count_out= 3	
+# time=                 385	 reset_al_in=1	 clk=1	  count_out= 4	
+# time=                 390	 reset_al_in=1	 clk=0	  count_out= 4	
+# time=                 395	 reset_al_in=1	 clk=1	  count_out= 5	
+# time=                 400	 reset_al_in=1	 clk=0	  count_out= 5	
+# time=                 405	 reset_al_in=1	 clk=1	  count_out= 6	
+# time=                 410	 reset_al_in=1	 clk=0	  count_out= 6	
+# time=                 415	 reset_al_in=1	 clk=1	  count_out= 7	
+# time=                 420	 reset_al_in=1	 clk=0	  count_out= 7	
+# time=                 425	 reset_al_in=1	 clk=1	  count_out= 8	
+# time=                 430	 reset_al_in=1	 clk=0	  count_out= 8	
+# time=                 435	 reset_al_in=1	 clk=1	  count_out= 9	
+# time=                 440	 reset_al_in=1	 clk=0	  count_out= 9	
+# time=                 445	 reset_al_in=1	 clk=1	  count_out=10	
+# time=                 450	 reset_al_in=1	 clk=0	  count_out=10	
+# time=                 455	 reset_al_in=1	 clk=1	  count_out=11	
+# time=                 460	 reset_al_in=1	 clk=0	  count_out=11	
+# time=                 465	 reset_al_in=1	 clk=1	  count_out=12	
+# time=                 470	 reset_al_in=1	 clk=0	  count_out=12	
+# time=                 475	 reset_al_in=1	 clk=1	  count_out=13	
+# time=                 480	 reset_al_in=1	 clk=0	  count_out=13	
+# time=                 485	 reset_al_in=1	 clk=1	  count_out=14	
+# time=                 490	 reset_al_in=1	 clk=0	  count_out=14	
+# time=                 495	 reset_al_in=1	 clk=1	  count_out=15	
+# time=                 500	 reset_al_in=1	 clk=0	  count_out=15	
+# time=                 505	 reset_al_in=1	 clk=1	  count_out= 0	
+# time=                 510	 reset_al_in=1	 clk=0	  count_out= 0	
+# time=                 515	 reset_al_in=1	 clk=1	  count_out= 1	
+# time=                 520	 reset_al_in=1	 clk=0	  count_out= 1	
+# time=                 525	 reset_al_in=1	 clk=1	  count_out= 2	
+# time=                 530	 reset_al_in=1	 clk=0	  count_out= 2	
+# time=                 535	 reset_al_in=1	 clk=1	  count_out= 3	
+# time=                 540	 reset_al_in=1	 clk=0	  count_out= 3	
+# time=                 545	 reset_al_in=1	 clk=1	  count_out= 4	
+# time=                 550	 reset_al_in=1	 clk=0	  count_out= 4	
+# time=                 555	 reset_al_in=1	 clk=1	  count_out= 5	
+# time=                 560	 reset_al_in=1	 clk=0	  count_out= 5	
+# time=                 565	 reset_al_in=1	 clk=1	  count_out= 6	
+# time=                 570	 reset_al_in=1	 clk=0	  count_out= 6	
+# time=                 575	 reset_al_in=1	 clk=1	  count_out= 7	
+# time=                 580	 reset_al_in=1	 clk=0	  count_out= 7	
+# time=                 585	 reset_al_in=1	 clk=1	  count_out= 8	
+# time=                 590	 reset_al_in=1	 clk=0	  count_out= 8	
+# time=                 595	 reset_al_in=1	 clk=1	  count_out= 9	
+# time=                 600	 reset_al_in=1	 clk=0	  count_out= 9	
+# time=                 605	 reset_al_in=1	 clk=1	  count_out=10	
+# time=                 610	 reset_al_in=1	 clk=0	  count_out=10	
+# time=                 615	 reset_al_in=1	 clk=1	  count_out=11	
+# ** Note: $stop    : counter_async_4bits_tb.v(22)
+#    Time: 6200 ps  Iteration: 0  Instance: /counter_async_4bits_tb
+# Break in Module counter_async_4bits_tb at counter_async_4bits_tb.v line 22
+# Stopped at counter_async_4bits_tb.v line 22
+# exit
+# End time: 19:25:50 on Feb 22,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
