@@ -7,13 +7,13 @@ output reg q_out;
 integer i;
 reg [N-2:0] temp_out;
 
-always@(posedge clk, negedge reset_al_in) begin
+always@(posedge clk) begin
 
 	if(~ reset_al_in)
 			{temp_out,q_out} <= 0;
 	else begin
-		q_out <= {temp_out[N-3:0],q_out};
-		temp_out[N-2] <= d_in;
+		q_out <= temp_out[0];
+		temp_out <= {d_in,temp_out[N-2:1]};		
 	end
 end 
 endmodule
