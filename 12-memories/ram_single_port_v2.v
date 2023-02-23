@@ -5,7 +5,7 @@ that in blocking statement the next statement will not execute unless previous o
 already executed. Therefore, new data will be written and then read again.
 */
 
-module ram_single_port(data_out, data_in, read_addr, write_addr, we, clk);
+module ram_single_port_v2(data_out, data_in, read_addr, write_addr, we, clk);
 
 input [7:0] data_in;
 input [5:0] read_addr,write_addr;

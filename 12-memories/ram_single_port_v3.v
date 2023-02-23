@@ -8,7 +8,7 @@ the address is registerd. affter this point the data out data change to new addr
 we could say data out will be available after some time after positive clock and during 
 this time data is not valid.
 */
-module ram_single_port(data_out, data_in, addr_in, we, clk);
+module ram_single_port_v3(data_out, data_in, addr_in, we, clk);
 
 input [7:0] data_in;
 input [5:0] addr_in;

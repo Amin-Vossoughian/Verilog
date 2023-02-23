@@ -3,7 +3,7 @@ read address instead of directly writing it. this lead to reading fresh data whi
 in first version we are reading old data. the same as version two.
 */
 
-module ram_single_port(data_out, data_in, read_addr, write_addr, we, clk);
+module ram_single_port_v4(data_out, data_in, read_addr, write_addr, we, clk);
 
 input [7:0] data_in;
 input [5:0] read_addr,write_addr;
