@@ -30,7 +30,7 @@ end
 
 always@(reg_a_in,reg_b_in,reg_op_code) begin
 	
-	case (op_code)
+	case (reg_op_code)
 		2'b00: reg_result_out = reg_a_in | reg_b_in;
 		2'b01: reg_result_out = reg_a_in ^ reg_b_in;
 		2'b10: reg_result_out = reg_a_in & reg_b_in;
