@@ -1,17 +1,15 @@
 /*
 The following desing is my own desing that is base on all the concept that 
-learn so far from the book and udemy. the problem with this desing is 
+learn so far from the books. the problem with this desing is 
 that the output will back to input, which form a cyclic design. it is not
 a problem in sequential design but compiler did not recognize this code as
-the code that implent the FF. But the latter code is recognize by compiler 
-and implement a ff with enable, eventhough it is very complex implementation
-but it is more professional to follow. 
-in additon, the concept that I have leared so far is mostly base in 
-combinational circuit design. in combinatinal if we neglect lase else consider
-as latch, but all of assignment were blocking, while here are non-blocking.
-
+the code that implent the FF with internal feedback. But the latter code is recognize by compiler 
+and implement a ff with enable, eventhough it has more instruction and more difficult to understand
+for design point of view and  implementation, but it has been common practice and more professional
+to follow. 
 the pdf in the folder shows both implementation. 
 */
+
 /*
 module d_ff_pet_syn_al_load_en(d_in, q_out, reset_al_in, en_in, clk);
 

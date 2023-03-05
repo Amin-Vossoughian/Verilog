@@ -33,7 +33,7 @@ and and2(N3,a,b);
 and and3(N4,cin,a);
 or  or1(c,N2,N3,N4);
 
-endmodule;
+endmodule
 
 /************ structural with Half-adder *******/
 module FA_1bit_st_HA (s,c,a,b,cin);

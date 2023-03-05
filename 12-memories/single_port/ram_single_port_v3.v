@@ -1,12 +1,11 @@
 /*
-in this design we only have one address. the addr_in is registerd
-in case we need to read the fresh data. 
-in case we use the address before registering , the data will be the old data.
-The timing procedure is as follow:
-a delta cycle after positive edge of clock, the data will be written in ram, and 
-the address is registerd. affter this point the data out data change to new address. therefore
-we could say data out will be available after some time after positive clock and during 
-this time data is not valid.
+	in this design we only have one address. the addr_in is registerd. In case we need to read
+	the fresh data. On the otherhand, if we use the address before registering , the data 
+	will be the old data. The timing procedure is as follow:
+	a delta cycle after positive edge of clock, the data will be written in ram, and 
+	the address is registerd. After this point the data_out change to new address.
+	therefore we could say data out will be available after some time after positive clock
+	and during this time data is not valid.
 */
 module ram_single_port_v3(data_out, data_in, addr_in, we_in, clk);
 

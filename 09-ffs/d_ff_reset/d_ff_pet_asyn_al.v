@@ -28,7 +28,7 @@ else begin
       if (clk) q_out <= d_in;
 	end
 
-the first if is consider as mux with two input. the second if is also will consider 
+the first if is consider as mux with two inputs. the second if is also will consider 
 as mux that have latch after it due to the abscense of else condition. this is aysnchronous
 due to the higher priority of the reset. 
 These are just explanation to realize what is occuring in lower level, otherwise the 

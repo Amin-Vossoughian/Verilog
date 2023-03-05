@@ -1,4 +1,4 @@
-In order to obtain the subtaction boolean equation, simply ignore all internet explanation.
+In order to obtain the subtractor boolean equation, simply ignore all internet explanation.
 They are stupid. the reality is that borrow in is added to a_in in the table, then b is subtract
 from it. in case we do not have borow in and a is grater that b, we need borrow so borrow out 
 become one. in case we already have borrow in equal to one, if the addtion with a_in lead to carry

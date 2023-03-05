@@ -1,6 +1,7 @@
-/* this is the same as the first version, the only difference is we are geistering
-read address instead of directly writing it. this lead to reading fresh data while 
-in first version we are reading old data. the same as version two.
+/* 
+	this is the same as the first version, the only difference is we are rgeistering
+	read address instead of directly writing it. this lead to reading fresh data while 
+	in first version we are reading old data. the same as version two.
 */
 
 module ram_single_port_v4(data_out, data_in, read_addr, write_addr, we_in, clk);

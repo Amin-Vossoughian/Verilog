@@ -1,3 +1,8 @@
+/*
+	The following design coposed of single data and address line. The reading and writing 
+	process could be managed by extra control signals of cs and oe. 
+*/
+
 module ram_single_port_v5
 		#(parameter DATA_WIDTH = 32,
 		  parameter ADDR_WIDTH = 4,

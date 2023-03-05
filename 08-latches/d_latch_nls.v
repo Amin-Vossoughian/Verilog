@@ -6,7 +6,7 @@ output reg q_out;
 
 always@* begin
 
-if (~en_in)  q_out = d_in;
+if (~en_in)  q_out <= d_in;
 
 end
 endmodule
